@@ -126,7 +126,7 @@ public class EmployeeController {
 		return empService.getByName(name);
 	}
 	
-	@PostMapping(value="/insertingDetails")
+	@PostMapping(value="/insertDetails")
 	public String addEmployee(@RequestBody Employee e)throws SalaryNotFound
 	{
 		return empService.addEmployee(e);
